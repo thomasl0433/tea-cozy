@@ -147,7 +147,7 @@ body {
     /* border: solid 1px red; */
     box-sizing: border-box;
     height: 200px;
-
+    margin: 10px auto;
 }
 
 .footer .copyright {
