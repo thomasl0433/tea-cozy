@@ -1,6 +1,7 @@
 * {
     /* border: solid red 2px; */
     font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
 }
 
 body {
@@ -12,11 +13,16 @@ body {
 /*  -- Header Styling -- */
 
 .header {
+    z-index: 1;
     /* border: solid red 1px; */
     border-bottom: 1px solid seashell;
     position: fixed;
+    background-color: #000;
     top: 0;
+    box-sizing: border-box;
     width: 100%;
+    height: 60px;
+    overflow: hidden;
 }
 
 .header img {
@@ -24,10 +30,61 @@ body {
 }
 
 .header h3 {
-    color: seashell;
     text-decoration: underline;
     text-align: center;
     float: right;
     display: block;
+    margin: auto 0;
     padding: 14px 16px;
+}
+
+/* -- Main Styling -- */
+.main {
+    margin-top: 60px;
+}
+
+.jumbotron {
+    position: relative;
+    box-sizing: content-box;
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url('./assets/img-mission-background.jpg');
+}
+
+.crossbar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    width: 100%;
+}
+
+.products {
+    margin: 10px 0;
+    width: 100%;
+    border: solid red 2px;
+}
+
+.products .text {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid red 2px;
+}
+
+.products .pictures {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products .pictures img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
 }
